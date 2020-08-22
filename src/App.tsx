@@ -46,7 +46,7 @@ function App() {
     }
   }
 
-  const { getRootProps, getInputProps } = useDropzone({ onDrop });
+  const { getRootProps, getInputProps } = useDropzone({ onDrop, accept: '.json' });
 
   function filterJson(inputEvent: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>): void {
     setJsonPathExpression(inputEvent.target.value);
