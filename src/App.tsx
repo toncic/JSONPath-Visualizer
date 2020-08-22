@@ -11,8 +11,10 @@ const { JSONPath } = require('jsonpath-plus');
 
 const useStyles = makeStyles((theme) => ({
   text: {
-    margin: theme.spacing(3),
-    opacity: "70%",
+    marginLeft: theme.spacing(3),
+    marginTop: theme.spacing(3),
+    marginBottom: theme.spacing(3),
+    color: "#303030",
   },
   json_tree_view: {
     margin: theme.spacing(3),

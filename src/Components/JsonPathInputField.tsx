@@ -10,7 +10,10 @@ interface Props {
 
 const useStyles = makeStyles((theme) => ({
     filter: {
-        margin: theme.spacing(3),
+        marginLeft: theme.spacing(3),
+        marginTop: theme.spacing(3),
+        marginRight: theme.spacing(3),
+        width: "-webkit-fill-available"
     },
 }));
 
