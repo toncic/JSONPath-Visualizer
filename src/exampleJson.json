@@ -1,0 +1,45 @@
+{
+  "_id": "5f40e739fa8c7b29abdee2a7",
+  "index": 0,
+  "guid": "1d190dc8-1b84-4ec9-9318-b0156b058574",
+  "isActive": false,
+  "balance": "$2,916.84",
+  "picture": "http://placehold.it/32x32",
+  "age": 25,
+  "eyeColor": "brown",
+  "name": "Kayla Porter",
+  "gender": "female",
+  "company": "LIQUICOM",
+  "email": "kaylaporter@liquicom.com",
+  "phone": "+1 (933) 453-3235",
+  "address": "160 Jerome Street, Gadsden, Hawaii, 9536",
+  "about": "Excepteur aute laboris nisi dolore proident est ea reprehenderit dolor.",
+  "registered": "2017-04-04T03:31:25 -03:00",
+  "latitude": 21.540194,
+  "longitude": -101.220539,
+  "tags": [
+    "amet",
+    "excepteur",
+    "nisi",
+    "veniam",
+    "tempor",
+    "esse",
+    "ut"
+  ],
+  "friends": [
+    {
+      "id": 0,
+      "name": "Lynne Blankenship"
+    },
+    {
+      "id": 1,
+      "name": "Hood Cole"
+    },
+    {
+      "id": 2,
+      "name": "Goodman Noel"
+    }
+  ],
+  "greeting": "Hello, Kayla Porter! You have 7 unread messages.",
+  "favoriteFruit": "apple"
+}

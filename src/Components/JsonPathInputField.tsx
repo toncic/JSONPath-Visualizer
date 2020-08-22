@@ -9,12 +9,9 @@ interface Props {
 }
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    '& > *': {
-      margin: theme.spacing(1),
-      width: '25ch',
+    filter: {
+        margin: theme.spacing(3),
     },
-  },
 }));
 
 
@@ -26,15 +23,14 @@ const JsonPathInputField: React.SFC<Props> = ({
     const classes = useStyles();
 
     return (
-      <form className={classes.root} noValidate autoComplete="off">
         <TextField
-          id="outlined-basic" 
-          label={text} 
-          variant="outlined"
-          onChange={onChange}
-          value={value}
+            id="outlined-basic"
+            label={text}
+            variant="outlined"
+            onChange={onChange}
+            value={value}
+            className={classes.filter}
         />
-      </form>
     );
 }
 
