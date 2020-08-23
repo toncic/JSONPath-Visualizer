@@ -1,4 +1,4 @@
-import React, { useState, ChangeEvent } from 'react';
+import React, { ChangeEvent } from 'react';
 import JSONTree from 'react-json-tree';
 import { useDropzone } from 'react-dropzone';
 import PrimaryButton from './Components/PrimaryButton';
