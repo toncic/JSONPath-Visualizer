@@ -18,6 +18,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react",
+    "experimentalDecorators": true,
     "plugins": [
       {
         "name": "typescript-tslint-plugin",
