@@ -7,7 +7,7 @@ import LoadingComponent from './Components/LoadingComponent';
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from '@material-ui/core/styles';
 import exampleJson from './exampleJson.json';
-const { JSONPath } = require('jsonpath-plus');
+import { JSONPath } from 'jsonpath-plus';
 
 const useStyles = makeStyles((theme) => ({
   text: {
@@ -41,7 +41,7 @@ function App() {
         setFullJson(jsonObject);
         setJsonPathExpression('');
       } catch (error) {
-        alert('Oh no, it seems that your file does not contain proper json structure. Please check your file and try again');
+        alert('Oh no, it seems that your file does not contain proper JSON structure. Please check your file and try again');
       }
     }
   }
@@ -50,7 +50,7 @@ function App() {
 
   function filterJson(inputEvent: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>): void {
     setJsonPathExpression(inputEvent.target.value);
-    let jsonPath = inputEvent.target.value;
+    const jsonPath = inputEvent.target.value;
     if (jsonPath) {
       setFiltering(true);
       const filteredJson = JSONPath({
@@ -81,11 +81,16 @@ function App() {
         onChange={filterJson}
         value={jsonPathExpression}
       />
-      <div className={classes.json_tree_view}>
+      <div className={classes.json_tree_view} data-testid="json-tree-view">
         {isFiltering ?
           <LoadingComponent /> : (
             <>
-              <Typography variant="h6" component="h6" align="left" className={classes.json_tree_view_title}>
+              <Typography
+                variant="h6"
+                component="h6"
+                align="left"
+                className={classes.json_tree_view_title}
+              >
                 Use this example or upload your JSON file
             </Typography>
               <JSONTree data={jsonToParse} />
